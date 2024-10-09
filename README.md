@@ -16,11 +16,11 @@ To visualize processing of reads -> multiqc_report_human.html, multiqc_report_mo
 
 To combine featureCounts outputs into a single table -> make_master.py
 
-To obtain Wald test comparisons of featureCounts outputs -> deseq_analysis.R
+To obtain Wald test comparisons of featureCounts outputs -> deseq2_analysis.R
 
 c) characterize Deseq2 generated Wald test comparisons:
 
-For Sm-RIP vs polyA-RNA -> equilibrium.R
+For Sm-RIP vs polyA-RNA -> sm_rip_vs_polyarna.R
 
 For ATP vs no ATP -> atp_vs_noatp.R
 
