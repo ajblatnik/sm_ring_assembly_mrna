@@ -10,19 +10,29 @@ Custom R scripts used to make a single master file giving the frequency of Sm-si
 
 Custom R scripts used to describe the RNAs identfiied with Sm-sites -> insilico.R
 
-b) to process raw sequencing files from publication, use sm_rip_seq_processing.sh
+b) to identify 5'ss and branchpoint sequences in supplied transcriptomes use find_5ss_bpt.py
+
+c) to create a Simplified Annotation File containing intron coordinates for counting intronic reads only -> intron_saf.R
+
+d) to process raw sequencing files from publication, use sm_rip_seq_processing.sh
 
 To visualize processing of reads -> multiqc_report_human.html, multiqc_report_mouse.html
 
 To combine featureCounts outputs into a single table -> make_master.py
 
-To obtain Wald test comparisons of featureCounts outputs -> deseq2_analysis.R
+To obtain Wald test comparisons of featureCounts outputs -> deseq2_analysis.R (for SmB and Y12 comparison, built into DESeq_Y12_SmB.R)
 
-c) characterize Deseq2 generated Wald test comparisons:
+e) characterize Deseq2 generated Wald test comparisons:
 
 For Sm-RIP vs polyA-RNA -> sm_rip_vs_polyarna.R
 
 For ATP vs no ATP -> atp_vs_noatp.R
+
+For analysis of 5'ss, bpt, and intron -> 5ss_bpt_intron.R
+
+For comparisons of Y12 and SmB RIP-seq -> Y12_SmB_enriched.R
+
+For processing ATP vs no ATP in higher stringency washing conditions -> stringent_Y12_ATP.R
 
 For identifying candidate mRNAs to test Sm-ring assembly directly -> candidates.R
 
